@@ -1,9 +1,15 @@
-name: Generate Snake
+name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 */12 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
 
 jobs:
   generate:
@@ -11,16 +17,22 @@ jobs:
     timeout-minutes: 10
     
     steps:
-      - name: generate snake.svg
-        uses: Platane/snk/svg-only@v2
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Generate snake game
+        uses: Platane/snk@v3
         with:
           github_user_name: zyadwaelmo
-          outputs: dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-
-      - name: push snake.svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v2.1.3
+          outputs: |
+            dist/snake.svg?palette=github-light&color_snake=#7c3aed&color_dots=#bfb7b6,#ffeaa7,#fab1a0,#ff7675,#fd79a8
+            dist/snake-dark.svg?palette=github-dark&color_snake=#7c3aed&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
+            
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
+          keep_history: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
