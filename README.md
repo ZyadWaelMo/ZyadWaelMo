@@ -1,23 +1,12 @@
 <br clear="both">
-
-<h2 align="center">Hi there 👋</h2>
-
-###
-
-<br clear="both">
-
-<h4 align="center">I'm Zyad,</h4>
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&center=true&vCenter=true&width=600&lines=Hi%2C+I'm+Zyad+👋;a+front-end+developer+💻;coding+is+my+joy+✨" alt="Typing Animation" />
+</div>
 
 ###
 
 <br clear="both">
-
-<p align="center">a passionate front-end developer 💻<br> my real joy is in bringing ideas to life through clean, friendly designs</p>
-
-###
-
-<br clear="both">
-
+<h2 align="center">My Skills</h2>
 <div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="40" alt="figma logo"  />
   <img width="12" />
@@ -39,7 +28,7 @@
 </div>
 
 ###
-
+<h2 align="center">Media</h2>
 <div align="center">
   <a href="https://www.linkedin.com/in/zyadwaelmo" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo"  />
