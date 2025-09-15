@@ -1,6 +1,6 @@
 <br clear="both">
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&center=true&vCenter=true&width=600&lines=Hi%2C+I'm+Zyad+👋;a+front-end+developer+💻;coding+is+my+joy+✨" alt="Typing Animation" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&center=true&vCenter=true&width=600&lines=Hi+👋;I'm+Zyad;a+front-end+developer+💻;" alt="Typing Animation" />
 </div>
 
 ###
